@@ -13,26 +13,45 @@ var review_textarea =document.querySelector("#review_textarea");
 var review_submit_btn=document.querySelector(".review_submit_btn");
 var review_cancel_btn=document.querySelector("#review_cancel_btn");
 
+var testimonial_containers = document.querySelector(".testimonial-containers")
+console.log(testimonial_containers);
+
+
+// var stars = document.querySelectorAll(".stars i");
+
+// review_btn1.addEventListener("click",(e)=>{
+
+//     if(review_search.value=="coimbatore"){
+      
+//          review_placeImg.style.display="block";
+//          testimonial_containers.display="block"
+//          review_share_btn.style.display="block";
+         
+//     }
+// })
 
 var stars = document.querySelectorAll(".stars i");
 
-review_btn1.addEventListener("click",(e)=>{
+review_btn1.addEventListener("click", (e) => {
+    if (review_search.value == "coimbatore") {
+        review_placeImg.style.display = "block";
+        testimonial_containers.style.display = "block";
+        testimonial_containers.style.display = "flex";
 
-    if(review_search.value=="coimbatore"){
-      
-         review_placeImg.style.display="block";
-         review_share_btn.style.display="block";
-         
+        review_share_btn.style.display = "block";
     }
-})
+});
+
+
+
 review_share_btn.addEventListener("click",(e)=>{
     review_container2.style.display="block";
-    review_maincontainer2.style.height="618px"
+    review_maincontainer2.style.height="51em"
     review_maincontainer2.style.position="absolute"
     review_maincontainer2.style.display= "block";
     review_maincontainer2.style.backgroundColor="rgba(0, 0, 0, 0.5)";;
     review_maincontainer2.style.opacity= "1";
-    // review_maincontainer2.style.transition="opacity 0.15s linear 0s";
+    
 })
 
 review_cancel_btn.addEventListener("click",cancel_fun);
@@ -85,30 +104,12 @@ stars.forEach((star, index1) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    // change_star.addEventListener("click", () => {
-    //     // console.log(change_star,index);
-    //     if (change_star.firstElementChild.className == "fa-regular fa-star") {
-    //         change_star.firstElementChild.className="fa-solid fa-star";
-    //      console.log(change_star.firstElementChild);
-    //      } else if (change_star.firstElementChild.className == "fa-solid fa-star") {
-    //         change_star.firstElementChild.className="fa-regular fa-star";
-    //      }
-    // })
-
-
-    
-
-
+var testi =document.querySelector(".testimonial-text")
+var testi_name =document.querySelector(".testimonial-author")
+console.log(testi);
+testi.addEventListener("click",()=>{
+  testi.innerHTML="Hi hello welcome it's clicked A handy Lorem Ipsum Generator that helps to create dummy text for all layout needs"
+  testi_name.innerHTML="Jack"
+})
 
 
