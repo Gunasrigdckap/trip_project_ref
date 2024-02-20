@@ -155,7 +155,10 @@ button.review_share_btn2 :hover{
 button{
     transition: 0.3s;
 }
-button:hover {
+button:hover {.img{
+    width: 100%;
+    height: 100%;
+}
     transform: scale(1.1, 1.1);
 }
 
@@ -240,7 +243,11 @@ button:hover {
     top: -40px;
     left: 116px;
 }
-
+img.img1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
 .testimonial-author {
     font-weight: bold;
     margin-top: 5px;
