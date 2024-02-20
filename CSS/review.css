@@ -38,7 +38,7 @@ body{
 }
 
 .review_placeImg{
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -61,7 +61,7 @@ body{
 }
 button.review_share_btn {
     position: relative;
-    left: 600px;
+    /* left: 600px; */
     top: 115px;
     background-color:#ff6113;
     color: #fff;
@@ -131,6 +131,10 @@ h3.review_container2_heading3 {
     font-size: 15px;
     border-color: #9E9E9E;
   }
+  .review_share {
+    display: flex;
+    justify-content: center;
+}
   button.review_submit_btn {
     position: relative;
     left: 27px;
