@@ -242,13 +242,20 @@ button:hover {
     margin-top: 5px;
 }
 
-.testti_quote {
+.testti_quote1 ,.testti_quote2 ,.testti_quote3 {
     font-size: 20px;
     color:  #f9d2d9ba;
     position: relative;
     right: 132px;
 }
-.testimonial-container2 {
+
+.testti_quote2{
+    color:#b2ebf291;
+}
+.testti_quote3{
+    color:#b0bec575;
+}
+.testimonial-container2,.testimonial-container3,.testimonial-container4 {
     width: 290px;
     padding: 10px;
     background-color: #f9d2d9ba;
@@ -258,7 +265,12 @@ button:hover {
     height: 80px;
  
 }
-
+.testimonial-container3 {
+    background-color:#b2ebf291;
+}
+.testimonial-container4 {
+    background-color:#b0bec575;
+}
 .testimonial-author {
     font-size: 20px;
     text-align: center;
